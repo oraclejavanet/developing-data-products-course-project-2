@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/504803/8e9cc99005574258b3c23e5677c4dc42
+bundleId: https://api.rpubs.com/api/v1/document/504803/8e9cc99005574258b3c23e5677c4dc42
+url: http://rpubs.com/OracleJavaNet/504803
+when: 1560472878.47443
