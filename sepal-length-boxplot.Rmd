@@ -1,12 +1,22 @@
 ---
-title: "Developing Data Products <br> Course Project 2"
+title: "Developing Data Products Course Project 2"
 author: "Jeffrey M. Hunter"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: ioslides_presentation
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include = FALSE}
+# set working directory
+setwd("~/repos/coursera/github-assignments/developing-data-products-course-project-2")
+
+# set knitr options
+knitr::opts_chunk$set(echo = TRUE, fig.path = 'figures/')
+
+# clear the global workspace (including hidden objects)
+rm(list = ls(all.names = TRUE))
+
+# free up memory and display statistics on free memory
+gc()
 ```
 
 ## Synopsis
