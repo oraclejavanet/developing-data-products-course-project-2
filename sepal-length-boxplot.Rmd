@@ -9,27 +9,38 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Synopsis
+
+This project was created for the Developing Data Products course as part of the
+Data Science Specialization offered through Coursera from Johns Hopkins
+University.
+
+The source code for this project can be found on
+GitHub: <a target="_blank" href="https://github.com/oraclejavanet/developing-data-products-course-project-2">Developing Data Products Course Project 2</a>
+
+## Objectives
+
+The goal of the project is to create a web page presentation using R Markdown
+that features a plot created with Plotly, and to host the resulting web page on
+either GitHub Pages, RPubs, or NeoCities.
+
 ## Sepal Length Boxplot
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r sepal-length-boxplot, message = FALSE, echo = FALSE}
+library(plotly)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+# Loading iris dataset
+data(iris)
+attach(iris)
 
-## Slide with Bullets
+#plotting a Boxplot with Sepal.Length variable and storing it in box_plot
+box_plot <- plot_ly(y = Sepal.Length,
+                    type = 'box',
+                    color = Species)
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r pressure}
-plot(pressure)
+#defining labels and title using layout()
+layout(box_plot,
+       title = "Iris Dataset",
+       yaxis = list(title = "Sepal.Length"))
 ```
 
