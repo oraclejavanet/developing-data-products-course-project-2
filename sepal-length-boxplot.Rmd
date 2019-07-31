@@ -7,7 +7,7 @@ output: ioslides_presentation
 
 ```{r setup, include = FALSE}
 # set working directory
-setwd("~/repos/coursera/github-assignments/developing-data-products-course-project-2")
+setwd("~/repos/coursera/data-science-specialization-github-assignments/developing-data-products-course-project-2")
 
 # set knitr options
 knitr::opts_chunk$set(echo = TRUE, fig.path = 'figures/')
